@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://br7pgyw6ycub4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 363.0
+offset_bottom = 644.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 34.0
+offset_right = 696.0
+offset_bottom = 323.0
+scale = Vector2(0.468512, 0.468512)
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 510.0
+offset_right = 839.0
+offset_bottom = 837.0
+scale = Vector2(0.283236, 0.283236)

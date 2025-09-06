@@ -25,6 +25,10 @@ window/size/viewport_height=640
 window/stretch/mode="viewport"
 window/handheld/orientation=1
 
+[editor]
+
+version_control/autoload_on_startup=true
+
 [input]
 
 button_Q={
