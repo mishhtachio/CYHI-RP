@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@export var fall_speed: float = 1.2
+@export var fall_speed: float = 2.3
 @export var init_y_pos: float = -360 
 
 var has_passed: bool = false 
