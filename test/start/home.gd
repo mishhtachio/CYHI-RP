@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://start/home.tscn")
-	
+
+func _on_texture_rect_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels/game_level.tscn")

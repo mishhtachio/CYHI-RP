@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="test"
-run/main_scene="uid://cnhyam40h2pk"
+run/main_scene="uid://b4x744ouawt1f"
 config/features=PackedStringArray("4.4", "Forward Plus")
+run/autoload_on_startup=true
 
 [autoload]
 

@@ -1,9 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2mylup8vpcrh"]
-
-[ext_resource type="Script" uid="uid://bfur2wlxav4hw" path="res://ui.gd" id="1_xaeyv"]
-[ext_resource type="Texture2D" uid="uid://dw0a3tdmhc5xa" path="res://title no button.png" id="2_ivjpa"]
-[ext_resource type="Texture2D" uid="uid://duw046h4brx0f" path="res://play.png" id="3_vcbyu"]
-[ext_resource type="Texture2D" uid="uid://b4smeyvtj6dc2" path="res://quit.png" id="4_lqqda"]
+[gd_scene format=3 uid="uid://bl86enptv7iv7"]
 
 [node name="titlescreen" type="Control"]
 layout_mode = 3
@@ -12,7 +7,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_xaeyv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -21,7 +15,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_ivjpa")
 stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -43,10 +36,8 @@ scale = Vector2(0.459283, 0.459283)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-texture_normal = ExtResource("3_vcbyu")
 
 [node name="quit" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("4_lqqda")
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_play_pressed"]
