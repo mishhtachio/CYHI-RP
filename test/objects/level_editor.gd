@@ -22,26 +22,22 @@ func _ready():
 	$MusicPlayer.stream = level_info.get(current_level_name).get("music")
 	$MusicPlayer.play()
 
-	if in_edit_mode:
-		pass
-	else:
-		var fk_times_arr = level_info.get(current_level_name).get("fk_times")
+	if not in_edit_mode:
+		var bpm = 120
+		var beat_interval = 60.0 / bpm # 0.5 seconds
+		var song_length = $MusicPlayer.stream.get_length() # 16 s
+		var lanes = ["button_Q", "button_W", "button_E", "button_R"]
+		
+		var rng = RandomNumberGenerator.new()
+		rng.randomize()
+		
+		var total_beats = int(song_length / beat_interval)
+		for i in range(total_beats):
+			var spawn_time = i * beat_interval
+			var lane = lanes[rng.randi_range(0, lanes.size() - 1)]
+			var frame = rng.randi_range(4, 7)
+			SpawnFallingKey(lane, spawn_time, frame)
 
-		var counter: int = 0
-		for key in fk_times_arr:
-			var button_name: String = ""
-			match counter:
-				0: button_name = "button_Q"
-				1: button_name = "button_W"
-				2: button_name = "button_E"
-				3: button_name = "button_R"
-
-			for entry in key:
-				var delay = entry["time"]
-				var frame = entry["frame"]
-				SpawnFallingKey(button_name, delay, frame)
-
-			counter += 1
 
 
 func SpawnFallingKey(button_name: String, delay: float, frame: int):
