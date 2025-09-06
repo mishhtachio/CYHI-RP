@@ -13,3 +13,6 @@ SWAT is a rhythm game inspired by Friday Night Funkin’, but with an Indian twi
 
 ASSESTS MADE BY US:
 https://www.figma.com/design/8iB4u3XHQYiSPJB5zUeKw0/CYHI-2025-crazy-gopalans-assets-and-iterations?node-id=0-1&t=P9Mx8G2SWYsL2WyT-1
+
+VIDEO GAMEPLAY LINK:
+https://drive.google.com/drive/folders/1GB98rPgOGFgMHw48PHIm6fpTUW-abQIR?usp=sharing
