@@ -88,7 +88,7 @@ func _ready():
 	$RandomSpawn.wait_time = randf_range(0.4, 3)
 	$RandomSpawn.start()
 
-func CreateFallingKey():
+func CreateFallingKey(button_name: String):
 	var fk_inst = falling_key.instantiate()
 	get_tree().get_root().call_deferred("add_child", fk_inst)
 	fk_inst.Setup(position.x, frame + 4)
@@ -98,7 +98,7 @@ func CreateFallingKey():
 
 
 func _on_random_spawn_timeout() -> void:
-	CreateFallingKey()
+	
 	$RandomSpawn.wait_time = randf_range(0.4, 3)
 	$RandomSpawn.start()
 	

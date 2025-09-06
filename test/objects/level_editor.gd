@@ -11,10 +11,11 @@ var level_info = {
 }
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _ready():
 	if in_edit_mode:
 		pass
 	else:
 		var fk_times = level_info.get(current_level_name).get("fk_times")
 		var fk_times_arr = str_to_var(fk_times)
 		print(fk_times_arr[0])
+		
